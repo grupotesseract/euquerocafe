@@ -9,28 +9,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [cafeimg, setCafeimg] = useState(cafe1);
-  const [participantes, setParticipantes] = useState([
-    {
-      nome: "karen",
-      jaganhou: false,
-      indice: 0,
-    },
-    {
-      nome: "thais",
-      jaganhou: false,
-      indice: 1,
-    },
-    {
-      nome: "zord",
-      jaganhou: false,
-      indice: 2,
-    },
-    {
-      nome: "dodo",
-      jaganhou: false,
-      indice: 3,
-    },
-  ]);
+  const [participantes, setParticipantes] = useState([]);
   const [novoParticipante, setNovoParticipante] = useState({ nome: '', jaganhou: false });
   const [sorteado, setSorteado] = useState({});
   const [rotacao, setRotacao] = useState(0);
